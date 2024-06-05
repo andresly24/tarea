@@ -1,0 +1,29 @@
+<div class="container text-center">
+    <div class="row">
+      <div class="col">
+        
+      </div>
+      <div class="col-6">
+        <h1><b>Imagenes</b></h1>
+      </div>
+      <div class="col">
+        
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          @for (foto of fotos; track foto.id) {
+              <img src="{{foto.download_url}}" alt="{{foto.id}}"/>
+              <p>{{foto.author}}</p>
+          }
+        </div>
+
+        <div class="col">
+
+          </div>
+      </div>
+</div>
